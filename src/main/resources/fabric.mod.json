@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "more-vanilla",
+	"version": "${version}",
+	"name": "More Vanilla",
+	"description": "This mod adds a little more progression to the game as a whole. It makes things easier if you're a veteran. It makes things more fun if you're a newbie. Mod by DeltaYD or Storm-",
+	"authors": [
+		"DeltaYD", "Storm-"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/more-vanilla/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.storm.morevanilla.MoreVanilla"
+		],
+		"client": [
+			"net.storm.morevanilla.MoreVanillaClient"
+		],
+		"fabric-datagen": [
+			"net.storm.morevanilla.MoreVanillaDataGenerator"
+		]
+	},
+	"mixins": [
+		"more-vanilla.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
