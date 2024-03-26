@@ -2,6 +2,7 @@ package net.storm.morevanilla;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.storm.morevanilla.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,8 +12,7 @@ public class MoreVanilla implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 
-
-		LOGGER.info("Hello Fabric world!");
 	}
 }
